@@ -1,10 +1,4 @@
 <h5>Recaptacha</h5>
 <form [formGroup]="aFormGroup">
-  <span>pollito</span>
-  <p>frito</p>
-    <ngx-recaptcha2 #captchaElem
-      [siteKey]="siteKey"
-      formControlName="recaptcha">
-    </ngx-recaptcha2>
     <button type="button"  [disabled]="!aFormGroup.valid">Submit</button>
   </form>
