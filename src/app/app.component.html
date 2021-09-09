@@ -1,8 +1,9 @@
 <h5>Recaptacha</h5>
 <form [formGroup]="aFormGroup">
+  <p>hola</p>
     <ngx-recaptcha2 #captchaElem
       [siteKey]="siteKey"
       formControlName="recaptcha">
     </ngx-recaptcha2>
-    <button type="button" mdbBtn color="primary [disabled]="!aFormGroup.valid">Submit</button>
+    <button type="button"  [disabled]="!aFormGroup.valid">Submit</button>
   </form>
